@@ -6,7 +6,7 @@ Param (
     [string]$EmailDomain = "",
     # Email sender
     [string]$EmailFrom = "donotreply@$EmailDomain",
-    # Email for suppoert (username)
+    # Email for support (username)
     [string]$SupportUserName = "support",
     # Email for support
     [string]$SupportEmail = "$SupportUserName@$EmailDomain",
