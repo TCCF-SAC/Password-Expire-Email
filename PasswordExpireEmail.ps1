@@ -66,7 +66,7 @@ foreach ($user in $users)
     {
         # Format the 'expire in X day(s)' message first.
         $MessageDays = $DaysToExpire;
-        if ($DaysToExpire -ge "1")
+        if ($DaysToExpire -gt "1")
         {
             $MessageDays = "in $DaysToExpire days";
         } else {
