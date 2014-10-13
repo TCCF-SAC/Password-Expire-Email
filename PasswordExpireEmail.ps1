@@ -134,7 +134,9 @@ foreach ($user in $users)
 if ($Debugging -eq $true -and $DebugMessage -ne "")
 {
     # Append params to the top of the email.
-    $DebugMessage = "Params:$crlf
+    $DebugMessage = "Users:" + $crlf + $crlf +
+        $DebugMessage + $crlf + $crlf +
+        "Parameters:$crlf
         ADGroup = $ADGroup
         SmtpServer = $SmtpServer
         EmailDomain = $EmailDomain
@@ -145,8 +147,7 @@ if ($Debugging -eq $true -and $DebugMessage -ne "")
         WebMailURL = $WebMailURL
         ExpireWarningDays = $ExpireWarningDays
         SendEmail = $SendEmail
-        DebugEmailTo = $DebugEmailTo" + $crlf + $crlf +
-        "Users:" + $crlf + $crlf + $DebugMessage;
+        DebugEmailTo = $DebugEmailTo";
 
     $Subject = "DEBUG: PasswordExpireEmail for $EmailDomain";
 
