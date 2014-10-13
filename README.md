@@ -33,7 +33,7 @@ contain detailed instructions on how to change their password.
 
 The following components are required to run this script:
 
-* Microsoft .NET Framework 4.5 or better: [http://www.microsoft.com/en-us/download/details.aspx?id=30653](http://www.microsoft.com/en-us/download/details.aspx?id=30653)
+* Windows Management Framework 4.0 or better: [http://www.microsoft.com/en-us/download/details.aspx?id=40855](http://www.microsoft.com/en-us/download/details.aspx?id=40855)
 * Active Directory module for PowerShell
     * From PowerShell, run: `Add-WindowsFeature RSAT-AD-PowerShell`
 
